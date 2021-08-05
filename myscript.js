@@ -28,11 +28,11 @@ if (etaUtente< 18){
     console.log(prezzoFinale);
     document.getElementById("prezzo-biglietto").innerHTML = prezzoFinale
     document.getElementById("commento-utente").innerHTML = "Sei minorenne hai uno sconto del 20%!"
-} else if (etaUtente >60 ){
+} else if (etaUtente >65 ){
     var sconto = calcoloBiglietto *40 /100
     var prezzoFinale= calcoloBiglietto - sconto
     document.getElementById("prezzo-biglietto").innerHTML = prezzoFinale
-    document.getElementById("commento-utente").innerHTML = "Sei over 60 hai uno sconto del 40%!"
+    document.getElementById("commento-utente").innerHTML = "Sei over 65 hai uno sconto del 40%!"
 } else {
     var prezzoFinale= calcoloBiglietto
     document.getElementById("prezzo-biglietto").innerHTML = prezzoFinale
