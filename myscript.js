@@ -35,7 +35,7 @@ if (etaUtente< 18){
     document.getElementById("commento-utente").innerHTML = "Sei over 65 hai uno sconto del 40%!"
 } else {
     var prezzoFinale= calcoloBiglietto
-    document.getElementById("prezzo-biglietto").innerHTML = prezzoFinale
+    document.getElementById("prezzo-biglietto").innerHTML = prezzoFinale   /* .toFixed(2) */
     document.getElementById("commento-utente").innerHTML = "No sales"
 
 }
